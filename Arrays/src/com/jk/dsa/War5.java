@@ -1,22 +1,19 @@
-package com.dsa.fun;
-//3.Reverse an Array
+package com.jk.dsa;
+
 import java.util.Arrays;
 
-public class Day3
+public class War5
 {
     public static void main(String[] args)
     {
-        int[] arr={1,2,3,4,5};
-        reverseArray(arr);
-        System.out.println(Arrays.toString(arr));
+       int[] arr={1,2,3,4,5};
+       reverseArray(arr);
     }
 
     public static void reverseArray(int[] arr)
     {
-        if (arr==null) return;
-
         int left=0;
-        int right=arr.length-1;
+        int right= arr.length-1;
         while (left<right)
         {
             int temp=arr[left];
@@ -25,6 +22,7 @@ public class Day3
             left++;
             right--;
         }
+        System.out.println(Arrays.toString(arr));
     }
 
 }
