@@ -10,6 +10,7 @@ public class War10
     }
     public static void pairSum(int[] arr,int target)
     {
+
         int left=0;
         int right=arr.length-1;
         boolean found = false;
@@ -29,6 +30,7 @@ public class War10
         if(!found){
             System.out.println("No Pair Found");
         }
+
     }
 
 }
